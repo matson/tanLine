@@ -13,6 +13,8 @@
 		3F7C79582A1297C600FFA895 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F7C79562A1297C600FFA895 /* Main.storyboard */; };
 		3F7C795A2A1297C700FFA895 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F7C79592A1297C700FFA895 /* Assets.xcassets */; };
 		3F7C795D2A1297C700FFA895 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F7C795B2A1297C700FFA895 /* LaunchScreen.storyboard */; };
+		3F7C79662A129E3700FFA895 /* dark_background.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3F7C79642A129E3700FFA895 /* dark_background.pdf */; };
+		3F7C79672A129E3700FFA895 /* light_background.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3F7C79652A129E3700FFA895 /* light_background.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		3F7C79592A1297C700FFA895 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F7C795C2A1297C700FFA895 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F7C795E2A1297C700FFA895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F7C79642A129E3700FFA895 /* dark_background.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = dark_background.pdf; sourceTree = "<group>"; };
+		3F7C79652A129E3700FFA895 /* light_background.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = light_background.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 				3F7C79542A1297C600FFA895 /* ViewController.swift */,
 				3F7C79562A1297C600FFA895 /* Main.storyboard */,
 				3F7C79592A1297C700FFA895 /* Assets.xcassets */,
+				3F7C79652A129E3700FFA895 /* light_background.pdf */,
+				3F7C79642A129E3700FFA895 /* dark_background.pdf */,
 				3F7C795B2A1297C700FFA895 /* LaunchScreen.storyboard */,
 				3F7C795E2A1297C700FFA895 /* Info.plist */,
 			);
@@ -125,6 +131,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F7C79672A129E3700FFA895 /* light_background.pdf in Resources */,
+				3F7C79662A129E3700FFA895 /* dark_background.pdf in Resources */,
 				3F7C795D2A1297C700FFA895 /* LaunchScreen.storyboard in Resources */,
 				3F7C795A2A1297C700FFA895 /* Assets.xcassets in Resources */,
 				3F7C79582A1297C600FFA895 /* Main.storyboard in Resources */,
