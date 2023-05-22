@@ -35,12 +35,31 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" name="colorScheme1"/>
                             </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IAe-GG-cPR">
+                                <rect key="frame" x="74" y="405" width="234" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="go"/>
+                                <connections>
+                                    <action selector="searchPressed:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="ETg-od-r7z"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nR1-33-T9U">
+                                <rect key="frame" x="315" y="404" width="59" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="magnifyingglass" catalog="system"/>
+                                <connections>
+                                    <action selector="searchPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZbI-y3-g5G"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.86078917980000003" green="0.76338973939999999" blue="0.66487312050000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <connections>
                         <outlet property="locationLabel" destination="buo-zG-i5R" id="nCu-Ke-zCJ"/>
+                        <outlet property="searchBar" destination="IAe-GG-cPR" id="NUR-4U-3yW"/>
                         <outlet property="weatherImage" destination="qbJ-E6-x9Q" id="xgg-vn-8Fs"/>
                         <outlet property="weatherLabel" destination="ox8-SP-aBH" id="sKn-dw-UAw"/>
                     </connections>
@@ -52,8 +71,9 @@
     </scenes>
     <resources>
         <image name="cloud.sun.bolt" catalog="system" width="123" height="128"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <namedColor name="colorScheme1">
-            <color red="0.56299999999999994" green="0.32400000000000001" blue="0.057000000000000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.56300002336502075" green="0.32400000095367432" blue="0.057000000029802322" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>
