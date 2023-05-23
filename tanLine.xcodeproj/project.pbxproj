@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F7291172A1D526000FBC069 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7291162A1D526000FBC069 /* WeatherData.swift */; };
 		3F7C79512A1297C600FFA895 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7C79502A1297C600FFA895 /* AppDelegate.swift */; };
 		3F7C79532A1297C600FFA895 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7C79522A1297C600FFA895 /* SceneDelegate.swift */; };
 		3F7C79552A1297C600FFA895 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7C79542A1297C600FFA895 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F7291162A1D526000FBC069 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		3F7C794D2A1297C600FFA895 /* tanLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tanLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F7C79502A1297C600FFA895 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F7C79522A1297C600FFA895 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				3FFFA4C92A1BFD84007581F9 /* WeatherManager.swift */,
+				3F7291162A1D526000FBC069 /* WeatherData.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F7C79552A1297C600FFA895 /* ViewController.swift in Sources */,
+				3F7291172A1D526000FBC069 /* WeatherData.swift in Sources */,
 				3F7C79512A1297C600FFA895 /* AppDelegate.swift in Sources */,
 				3FFFA4CA2A1BFD84007581F9 /* WeatherManager.swift in Sources */,
 				3F7C79532A1297C600FFA895 /* SceneDelegate.swift in Sources */,
