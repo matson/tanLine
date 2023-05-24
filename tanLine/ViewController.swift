@@ -61,10 +61,14 @@ class ViewController: UIViewController, UITextFieldDelegate,  WeatherManagerDele
         searchBar.text = ""
     }
     
-    func didUpdateWeather(weather: WeatherModel){
+    func didUpdateWeather(_ weatherManager: WeatherManager, weather: WeatherModel){
         print(weather.temperature)
         
     }
     
+    func didFailWithError(error: Error) {
+        print(error)
+        
+    }
 }
 
