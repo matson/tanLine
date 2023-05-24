@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class ViewController: UIViewController, UITextFieldDelegate,  WeatherManagerDelegate{
     
     
     @IBOutlet weak var searchBar: UITextField!
@@ -23,9 +23,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background.png")!)
-        
-        //set it to class.
+        weatherManager.delegate = self
         searchBar.delegate = self
         
         // Do any additional setup after loading the view.
@@ -61,8 +59,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
         //capture the weather for the city
         searchBar.text = ""
-        
-        
+    }
+    
+    func didUpdateWeather(weather: WeatherModel){
+        print(weather.temperature)
         
     }
     

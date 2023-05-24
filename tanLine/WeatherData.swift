@@ -7,18 +7,16 @@
 
 import Foundation
 
-struct WeatherData: Decodable {
+struct WeatherData: Codable {
     let name: String
     let main: Main
-    
-    
-    
+    let weather: [Weather] //an array
 }
 
-struct Main: Decodable {
+struct Main: Codable {
     let temp: Double
-    
 }
 
-//get cloudyness, or pick the features you want and translate them on here.
-
+struct Weather: Codable {
+    let id: Int
+}
