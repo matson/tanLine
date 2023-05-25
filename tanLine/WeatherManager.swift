@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreLocation
 
 /*
  real key should not be on Github.
@@ -24,6 +25,11 @@ struct WeatherManager {
     func fetchWeather(cityName: String){
         //by city
         let urlString = "\(weatherURL)&q=\(cityName)"
+        performRequest(with: urlString)
+    }
+    
+    func featchWeather(latitude: CLLocationDegrees, longitude: CLLocationDegrees){
+        let urlString = "\(weatherURL)&lat=\(latitude)&lon=\(longitude)"
         performRequest(with: urlString)
     }
     
