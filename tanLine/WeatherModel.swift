@@ -39,4 +39,17 @@ struct WeatherModel {
         }
         
     }
+    
+    //void function.
+    func bronzeRadar(conditionName: String) -> String {
+        var text: String
+        if(conditionName == "sun.max"){
+              text = "wear that sunscreen and get that bronze on!"
+        }
+        else{
+            text = "you problably will not catch that bronze today"
+        }
+        return text
+    }
+    
 }

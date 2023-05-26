@@ -21,6 +21,8 @@ class ViewController: UIViewController{
    
     @IBOutlet weak var locationLabel: UILabel!
     
+    @IBOutlet weak var bronzeLabel: UILabel!
+    
     var weatherManager = WeatherManager()
     let locationManager = CLLocationManager()
     
@@ -93,6 +95,9 @@ extension ViewController: WeatherManagerDelegate {
             self.weatherLabel.text = weather.temperatureString
             self.weatherImage.image = UIImage(systemName: weather.conditionName)
             self.locationLabel.text = weather.cityName
+            //call here
+            self.bronzeLabel.text = weather.bronzeRadar(conditionName: weather.conditionName)
+            
         }
         
     }
